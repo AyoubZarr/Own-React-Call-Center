@@ -1,6 +1,75 @@
 .App {
   text-align: center;
+  font-family: "RoihuLight";
 }
+
+@font-face {
+  font-family: "Primary";
+  /*Can be any text*/
+  src: local("AlataRegular"),
+    url("./fonts/AlataRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Secondary";
+  /*Can be any text*/
+  src: local("AbelRegular"),
+    url("./fonts/AbelRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roihu";
+  /*Can be any text*/
+  src: local("Roihu_Regular"),
+    url("./fonts/Roihu_Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "RoihuLight";
+  /*Can be any text*/
+  src: local("Roihu_Light"),
+    url("./fonts/Roihu_Light.otf") format("truetype");
+}
+
+.full-width {
+  width: 100%;
+}
+
+.main-container{
+  font-family: 'Segoe UI',
+    'Roboto',
+    'Oxygen';
+}
+
+.loading-area {
+  display: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff55;
+}
+
+.page-title {
+  width: 100%;
+  text-align: start;
+  clear: both;
+  padding: 1rem 1rem;
+  color: #bc2c3d;
+  top: 0;
+  z-index: 10;
+  border-bottom: 3px #bc2c3d solid;
+}
+
+.included-component {
+  text-align: start;
+  padding: 1rem 1rem;
+  background-color: #EEEEEE;
+}
+
+.first-item-top {
+  margin-top: 40px;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -8,7 +77,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .logo {
     animation: App-logo-float infinite 3s ease-in-out;
   }
 }
@@ -30,10 +99,75 @@
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(0px);
   }
 }
+
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin: 40px 0 40px 0;
+  height: 100px;
+  width: 100px;
+  background-image: url('./Djezzy_logo.png');
+  background-size: cover;
+}
+
+.accent-color {
+  background-color: #bc2c3d !important;
+  color: #fff6fa !important;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+h5{
+  color: #5a5a5a;
+  font-family: "Primary";
+}
+
+.modal-header{
+    font-family: "Primary";
+  }
+
+.form-title{
+  font-family: "Primary" !important;
+  background-color: #efefef !important;
+}
+
+.comment {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.filter-control{
+  background-color: #3484c6 !important;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.badge-light{
+  background-color: #cfdbda !important;
+  border: 1px solid #949494;
+}
+
+.badge-grenat{
+  background-color: #C74747 !important;
+  border: 1px solid #AD0000;
+  color: #EEEEEE !important;
+}
+
